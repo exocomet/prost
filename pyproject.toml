@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prost"
+version = "0.1"
+description = "Cheers!"
+authors = [
+    { name="Alexander Kutterer", email="alexander@kutterer.at" }
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+prost = "prost.main:main"
+
+[tool.setuptools.packages.find]
+where = [".", "src"]
+
+[project.urls]
+"Homepage" = "https://your.project.url"
+"Source" = "https://your.project.source.url"
+"Tracker" = "https://your.project.issue.tracker.url"
